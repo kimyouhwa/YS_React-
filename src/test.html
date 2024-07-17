@@ -1,0 +1,52 @@
+<!-- <div id='introBox'>
+<h1>Login</h1>
+<div class="이름박스">Username</div>
+<div class="비번박스">Passport</div>
+<button  onclick="{}">Login</button>
+<div class="join">
+  <p>Don't have an account?</p>
+  <a href="http:// Resister...."></a>
+</div>
+</div> -->
+import { useForm } from "react-hook-form";
+
+function App() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
+  const submitForm = (data) => {
+    console.log(data);
+  };
+
+  console.log(errors);
+
+  return (
+    <form autoComplete="off" onSubmit={handleSubmit(submitForm)}>
+      <h3>React-Hook-Form 사용한 input</h3>
+      <div>
+        <label htmlFor="id">아이디</label>
+        <input
+          type="text"
+          id="id"
+          {...register("id", { required: true, maxLength: 10 })}
+        />
+        {errors.id && <p>ERROR!!!</p>}
+      </div>
+      <div>
+        <label htmlFor="pw">비밀번호</label>
+        <input
+          type="password"
+          id="pw"
+          {...register("pw", { required: true, minLength: 5 })}
+        />
+        {errors.pw && <p>ERROR!!!</p>}
+      </div>
+      <button>Login</button>
+    </form>
+  );
+}
+
+export default App;
