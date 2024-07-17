@@ -43,12 +43,30 @@
 // 지환
 // 
 // 목샘 로긴박스 ------------------------------------------//
-import {LoginBox} from './components/LoginBox';
+// import {LoginBox} from './components/LoginBox';
 
-export function App(){
-  return (
-    <div>
-      <LoginBox></LoginBox>
-    </div>
-  );
-}
+// export function App(){
+//   return (
+//     <div>
+//       <LoginBox></LoginBox>
+//     </div>
+//   );
+// }
+
+// import {LoginBox} from './components/LoginBox';
+// export function App(){
+//   return(
+//     <div>
+//       <LoginBox></LoginBox>
+//     </div>
+//   );
+// }
+//App2jsx_File 파일은 LoginBox 컴포넌트를 임포트하고 이를 렌더링하는 메인 애플리케이션 컴포넌트를 정의합니다.
+// import {loginBox} from './component/LoginBox';
+// export function  App(){
+//   return(
+//     <div>
+//       <LoginBox></LoginBox>
+//     </div>
+//   );
+// }
