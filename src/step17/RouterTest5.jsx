@@ -19,7 +19,7 @@ export function RouterTest5(){
       <Route path="/search"  element={<Search/>}/>
       <Route path="/about" element={<About2/>}>
         <Route path='details' element={<AboutDetails/>}/>
-      </Route>
+      </Route>``````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
       </Routes>
     </Router>
   );
