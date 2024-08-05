@@ -7,7 +7,8 @@ export function RouterTest3(){
   return (
     <Router>
       <nav>
-        <Link to="/">홈</Link> | <Link to="/about">도움말</Link>
+        <Link to="/">홈</Link> | 
+        <Link to="/about">도움말</Link>
       </nav>
       <Routes>
       <Route path="/"      element={<Home/>}/>
